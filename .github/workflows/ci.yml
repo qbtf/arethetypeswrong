@@ -1,5 +1,7 @@
 name: CI
 on:
+  push:
+    branches: ['@qbtf/*']
   pull_request:
     branches: ['@qbtf/*']
 
@@ -14,6 +16,8 @@ jobs:
         with:
           fetch-depth: 1
       - uses: pnpm/action-setup@v4
+        with:
+          version: 8
       - uses: actions/setup-node@v4
         with:
           node-version: 22
