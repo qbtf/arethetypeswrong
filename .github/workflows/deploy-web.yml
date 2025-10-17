@@ -1,7 +1,7 @@
 name: Deploy Site
 on:
   push:
-    branches: [main]
+    branches: ['@qbtf/dev']
 
 jobs:
   build:
