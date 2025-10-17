@@ -297,7 +297,7 @@ function extractTarball(tarball: Uint8Array) {
   // Use streaming API to work around https://github.com/101arrowz/fflate/issues/207
   let unzipped: Uint8Array;
   new Gunzip((chunk) => (unzipped = chunk)).push(tarball, /*final*/ true);
-  const data = untar(unzipped!);
+  const data = untar(unzipped!.buffer as ArrayBuffer);
   const prefix = data[0].filename.substring(0, data[0].filename.indexOf("/") + 1);
   const packageJsonText = data.find((f) => f.filename === `${prefix}package.json`)?.fileData;
   const packageJson = JSON.parse(new TextDecoder().decode(packageJsonText));
