@@ -39,7 +39,7 @@
   "devDependencies": {
     "@azure/storage-blob": "^12.14.0",
     "@types/cli-progress": "^3.11.0",
-    "@types/node": "^22.5.0",
+    "@types/node": "^22.18.11",
     "@types/pacote": "^11.1.5",
     "@types/semver": "^7.5.0",
     "cli-progress": "^3.12.0",
