@@ -20,8 +20,8 @@ importers:
         specifier: ^3.0.3
         version: 3.0.3
       typescript:
-        specifier: 5.6.3
-        version: 5.6.3
+        specifier: 5.7.3
+        version: 5.7.3
 
   packages/cli:
     dependencies:
@@ -84,8 +84,8 @@ importers:
         specifier: ^7.5.4
         version: 7.5.4
       typescript:
-        specifier: 5.6.3
-        version: 5.6.3
+        specifier: 5.7.3
+        version: 5.7.3
       validate-npm-package-name:
         specifier: ^5.0.0
         version: 5.0.0
@@ -1747,8 +1747,8 @@ packages:
   types-registry@0.1.742:
     resolution: {integrity: sha512-Co6+lvFS+ibYM6G6eGpC5PNPzEs3AOgDmXgCqWVmbp8LaTkUX7sF9rssXlp1bIgUP/Rw3isvgs0QPtwREgJL4w==}
 
-  typescript@5.6.3:
-    resolution: {integrity: sha512-hjcS1mhfuyi4WW8IWtjP7brDrG2cuDZukyrYrSauoXGNgx0S7zceP07adYkJycEr56BOUTNPzbInooiN3fn1qw==}
+  typescript@5.7.3:
+    resolution: {integrity: sha512-84MVSjMEHP+FQRPy3pX9sTVV/INIex71s9TL2Gm5FG/WG1SqXeKyZ0k7/blY/4FdOzI12CBy1vGc4og/eus0fw==}
     engines: {node: '>=14.17'}
     hasBin: true
 
@@ -3494,7 +3494,7 @@ snapshots:
 
   types-registry@0.1.742: {}
 
-  typescript@5.6.3: {}
+  typescript@5.7.3: {}
 
   undici-types@6.19.8: {}
 
