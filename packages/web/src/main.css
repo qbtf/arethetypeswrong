@@ -159,3 +159,26 @@ td {
 #nprogress .bar {
   background: var(--color-link);
 }
+
+@media (prefers-color-scheme: dark) {
+  /* from https://github.com/storybookjs/react-inspector/blob/main/src/styles/themes/chromeDark.tsx */
+  .jsonView.jsonView {
+    color: rgb(213, 213, 213);
+  }
+  .jsonView.jsonView > .name {
+    color: rgb(227, 110, 236);
+  }
+
+  .jsonView.jsonView > .value.null {
+    color: rgb(127, 127, 127);
+  }
+
+  .jsonView.jsonView > .value.boolean,
+  .jsonView.jsonView > .value.number {
+    color: hsl(252, 100%, 75%);
+  }
+
+  .jsonView.jsonView > .value.string {
+    color: rgb(233, 63, 59);
+  }
+}
