@@ -197,7 +197,7 @@ if (
   await fullFh.close();
   await unlink(fullJsonFileName);
   await rename(cleanedFileName, fullJsonFileName);
-  await new Promise((resolve, reject) => {
+  await new Promise<void>((resolve, reject) => {
     createReadStream(fullJsonFileName)
       .pipe(createGzip({ level: 9 }))
       .pipe(createWriteStream(`${fullJsonFileName.pathname}.gz`))

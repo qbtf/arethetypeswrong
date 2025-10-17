@@ -35,7 +35,7 @@ export async function downloadData() {
     console.log("Downloading full.json.gz");
     await fullBlobClient.downloadToFile(`${fullJsonFileName.pathname}.gz`);
     console.log("Unzipping full.json.gz");
-    await new Promise((resolve, reject) => {
+    await new Promise<void>((resolve, reject) => {
       createReadStream(`${fullJsonFileName.pathname}.gz`)
         .pipe(createGunzip())
         .pipe(createWriteStream(fullJsonFileName.pathname))
